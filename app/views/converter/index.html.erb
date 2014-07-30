@@ -1,0 +1,7 @@
+<h1>Convert your file to PDF!</h1>
+<p>Type the URL in the box below:</p>
+<%= form_tag("/create", method: "get") do %>
+  <%= label_tag(:q, "File URL:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Convert") %>
+<% end %>
